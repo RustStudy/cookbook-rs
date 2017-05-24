@@ -6,6 +6,7 @@ use cookbook::basic::read_file;
 use cookbook::basic::rand_gen;
 use cookbook::basic::rand_gen::{Point};
 use cookbook::basic::command;
+use cookbook::basic::lazy_eval;
 
 
 pub fn main() {
@@ -22,4 +23,9 @@ pub fn main() {
   println!("Random Point: {:?}", rand_point);
 
   command::run();
+
+
+
+  lazy_eval::show_access("Jim");
+  lazy_eval::run();
 }
